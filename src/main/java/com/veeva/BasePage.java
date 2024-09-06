@@ -7,21 +7,27 @@
  import org.openqa.selenium.edge.EdgeDriver;
  import org.openqa.selenium.edge.EdgeOptions;
 
- import org.openqa.selenium.WebDriver;
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
  
  public class BasePage {
  
      protected WebDriver driver;
      private EdgeOptions options;
+     protected final String baseURL = "https://google.com";
      
      public BasePage() {
          System.setProperty("webdriver.edge.driver", "./ms_edge/msedgedriver.exe");
          options = new EdgeOptions();
          options.addArguments("--remote-allow-origins=*");
          driver = new EdgeDriver(options);
+
+         driver.get(baseURL);
+         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(500));
      }
  
-     protected void quit() {
+     public void quit() {
         driver.quit();
      }
  }

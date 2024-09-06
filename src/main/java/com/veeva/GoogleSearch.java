@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 
 public class GoogleSearch extends BasePage {
@@ -16,16 +17,25 @@ public class GoogleSearch extends BasePage {
         super();
     }
 
-    public List<String> getSearchSuggestions(String test) {
-        driver.get("https://google.com");
-        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(500));
+    public SearchResultPage getSearchResultPage(String term) {
+        WebElement textArea = driver.findElement(By.tagName("textarea"));
+
+        textArea.click();
+        textArea.sendKeys(term);
+        textArea.sendKeys(Keys.RETURN);
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(2000));
+        return new SearchResultPage(driver.getCurrentUrl());
+    }
+
+    public List<String> getSearchSuggestions(String term) {
 
         // get the textarea
         WebElement textArea = driver.findElement(By.tagName("textarea"));
 
         // insert search term
         textArea.click();
-        textArea.sendKeys(test);
+        textArea.sendKeys(term);
 
         // wait again for search suggestions to reload
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(500));
