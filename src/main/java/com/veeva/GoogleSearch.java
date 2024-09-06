@@ -17,7 +17,7 @@ public class GoogleSearch extends BasePage {
         super();
     }
 
-    public SearchResultPage getSearchResultPage(String term) {
+    public SearchResultPageNavigator getSearchResultPage(String term) {
         WebElement textArea = driver.findElement(By.tagName("textarea"));
 
         textArea.click();
@@ -25,7 +25,7 @@ public class GoogleSearch extends BasePage {
         textArea.sendKeys(Keys.RETURN);
 
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(2000));
-        return new SearchResultPage(driver.getCurrentUrl());
+        return new SearchResultPageNavigator(driver.getCurrentUrl());
     }
 
     public List<String> getSearchSuggestions(String term) {

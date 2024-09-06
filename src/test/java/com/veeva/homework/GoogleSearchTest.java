@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import java.util.List;
 
 import com.veeva.GoogleSearch;
-import com.veeva.SearchResultPage;
+import com.veeva.SearchResultPageNavigator;
 
 import io.cucumber.java.After;
 import io.cucumber.java.en.Given;
@@ -42,7 +42,7 @@ public class GoogleSearchTest {
         assertEquals(true, allSuggestionsContainTerm);
     }
 
-    SearchResultPage resultPage;
+    SearchResultPageNavigator resultPage;
 
     @Given("the search term")
     public void the_search_term() {
