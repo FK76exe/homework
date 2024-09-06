@@ -1,11 +1,14 @@
 package com.veeva.homework;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 import java.util.List;
 
 import com.veeva.GoogleSearch;
+import com.veeva.SearchResultPage;
 
+import io.cucumber.java.After;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
@@ -37,6 +40,28 @@ public class GoogleSearchTest {
             }
         }
         assertEquals(true, allSuggestionsContainTerm);
+    }
+
+    SearchResultPage resultPage;
+
+    @Given("the search term")
+    public void the_search_term() {
+        the_term_test();
+    }
+
+    @When("I request search results")
+    public void i_request_search_results() {
+        resultPage = searchDriver.getSearchResultPage(searchTerm);
+    }
+
+    @Then("I should be given a search result page")
+    public void i_should_be_given_a_search_result_page() {
+        assertNotEquals(null, resultPage);
+    }
+
+    @After
+    public void clean_up() {
+        searchDriver.quit();
     }
 
 }
