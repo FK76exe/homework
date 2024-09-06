@@ -1,0 +1,250 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------< com.veeva:homework >-------------------------
+[INFO] Building homework 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ homework ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ homework ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ homework ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 2 resources from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ homework ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- surefire:3.3.1:test (default-test) @ homework ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.veeva.homework.RunCucumberTest
+
+Scenario: The search term "test" is presented in the search suggestion list [90m# com/veeva/homework/Do_search_suggestions_contain_the_search_term.feature:4[0m
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting Microsoft Edge WebDriver 128.0.2739.63 (6ff765a876b3bf68ca4c1627d3f2bd2001e0ba8e) on port 61602
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
+
+Only local connections are allowed.
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+
+Microsoft Edge WebDriver was started successfully.
+msedgedriver was started successfully on port 61602.
+Sep. 06, 2024 6:37:59 P.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Sep. 06, 2024 6:37:59 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, so returning the closest version found: a no-op implementation
+Sep. 06, 2024 6:37:59 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 128.
+Sep. 06, 2024 6:37:59 P.M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.0.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  [32mGiven [0m[32mthe term test[0m                                                       [90m# com.veeva.homework.GoogleSearchTest.the_term_test()[0m
+  [32mWhen [0m[32mI type it into the search box[0m                                        [90m# com.veeva.homework.GoogleSearchTest.i_type_it_into_the_search_box()[0m
+  [32mThen [0m[32mI should be given suggestions containing test[0m                        [90m# com.veeva.homework.GoogleSearchTest.i_should_be_given_suggestions_containing_test()[0m
+Starting Microsoft Edge WebDriver 128.0.2739.63 (6ff765a876b3bf68ca4c1627d3f2bd2001e0ba8e) on port 62290
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
+
+Only local connections are allowed.
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+
+Microsoft Edge WebDriver was started successfully.
+msedgedriver was started successfully on port 62290.
+Sep. 06, 2024 6:38:04 P.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Sep. 06, 2024 6:38:04 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, so returning the closest version found: a no-op implementation
+Sep. 06, 2024 6:38:04 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 128.
+Sep. 06, 2024 6:38:04 P.M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.0.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+      [31mjava.lang.NullPointerException: Cannot invoke "com.veeva.SearchResultPageNavigator.quit()" because "this.searchResult" is null
+	at com.veeva.homework.SearchResultPageTest.cleanUp(SearchResultPageTest.java:39)
+[0m
+
+Scenario: Requesting a search term's results leads to a new search result pages [90m# com/veeva/homework/Do_search_suggestions_contain_the_search_term.feature:9[0m
+Starting Microsoft Edge WebDriver 128.0.2739.63 (6ff765a876b3bf68ca4c1627d3f2bd2001e0ba8e) on port 58182
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
+
+Only local connections are allowed.
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+
+Microsoft Edge WebDriver was started successfully.
+msedgedriver was started successfully on port 58182.
+Sep. 06, 2024 6:38:09 P.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Sep. 06, 2024 6:38:09 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, so returning the closest version found: a no-op implementation
+Sep. 06, 2024 6:38:09 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 128.
+Sep. 06, 2024 6:38:09 P.M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.0.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  [32mGiven [0m[32mthe search term[0m                                                         [90m# com.veeva.homework.GoogleSearchTest.the_search_term()[0m
+Starting Microsoft Edge WebDriver 128.0.2739.63 (6ff765a876b3bf68ca4c1627d3f2bd2001e0ba8e) on port 62240
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
+
+Only local connections are allowed.
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+
+Microsoft Edge WebDriver was started successfully.
+msedgedriver was started successfully on port 62240.
+Sep. 06, 2024 6:38:16 P.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Sep. 06, 2024 6:38:16 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, so returning the closest version found: a no-op implementation
+Sep. 06, 2024 6:38:16 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 128.
+Sep. 06, 2024 6:38:16 P.M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.0.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  [32mWhen [0m[32mI request search results[0m                                                 [90m# com.veeva.homework.GoogleSearchTest.i_request_search_results()[0m
+  [32mThen [0m[32mI should be given a search result page[0m                                   [90m# com.veeva.homework.GoogleSearchTest.i_should_be_given_a_search_result_page()[0m
+Starting Microsoft Edge WebDriver 128.0.2739.63 (6ff765a876b3bf68ca4c1627d3f2bd2001e0ba8e) on port 54885
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
+
+Only local connections are allowed.
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+
+Microsoft Edge WebDriver was started successfully.
+msedgedriver was started successfully on port 54885.
+Sep. 06, 2024 6:38:24 P.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Sep. 06, 2024 6:38:24 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, so returning the closest version found: a no-op implementation
+Sep. 06, 2024 6:38:24 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 128.
+Sep. 06, 2024 6:38:24 P.M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.0.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+      [31mjava.lang.NullPointerException: Cannot invoke "com.veeva.SearchResultPageNavigator.quit()" because "this.searchResult" is null
+	at com.veeva.homework.SearchResultPageTest.cleanUp(SearchResultPageTest.java:39)
+[0m
+Sep. 06, 2024 6:38:26 P.M. org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:367)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:398)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+
+Scenario: We go to the next page of results            [90m# com/veeva/homework/search_results.feature:3[0m
+Starting Microsoft Edge WebDriver 128.0.2739.63 (6ff765a876b3bf68ca4c1627d3f2bd2001e0ba8e) on port 56655
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
+
+Only local connections are allowed.
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+
+Microsoft Edge WebDriver was started successfully.
+msedgedriver was started successfully on port 56655.
+Sep. 06, 2024 6:38:30 P.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Sep. 06, 2024 6:38:30 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, so returning the closest version found: a no-op implementation
+Sep. 06, 2024 6:38:30 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 128.
+Sep. 06, 2024 6:38:30 P.M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.0.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Starting Microsoft Edge WebDriver 128.0.2739.63 (6ff765a876b3bf68ca4c1627d3f2bd2001e0ba8e) on port 54363
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
+
+Only local connections are allowed.
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+
+Microsoft Edge WebDriver was started successfully.
+msedgedriver was started successfully on port 54363.
+Sep. 06, 2024 6:38:38 P.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Sep. 06, 2024 6:38:38 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, so returning the closest version found: a no-op implementation
+Sep. 06, 2024 6:38:38 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 128.
+Sep. 06, 2024 6:38:38 P.M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.0.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  [32mGiven [0m[32ma search result page[0m                           [90m# com.veeva.homework.SearchResultPageTest.a_search_result_page()[0m
+  [32mWhen [0m[32mI move forward[0m                                  [90m# com.veeva.homework.SearchResultPageTest.i_move_forward()[0m
+  [31mThen [0m[31mI will get the next result page in the sequence[0m [90m# com.veeva.homework.SearchResultPageTest.i_will_get_the_next_result_page_in_the_sequence()[0m
+      [31morg.opentest4j.AssertionFailedError: expected: <1> but was: <3>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+	at com.veeva.homework.SearchResultPageTest.i_will_get_the_next_result_page_in_the_sequence(SearchResultPageTest.java:34)
+	at ✽.I will get the next result page in the sequence(classpath:com/veeva/homework/search_results.feature:6)
+[0m
+Starting Microsoft Edge WebDriver 128.0.2739.63 (6ff765a876b3bf68ca4c1627d3f2bd2001e0ba8e) on port 53858
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
+
+Only local connections are allowed.
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+
+Microsoft Edge WebDriver was started successfully.
+msedgedriver was started successfully on port 53858.
+Sep. 06, 2024 6:38:48 P.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Sep. 06, 2024 6:38:48 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, so returning the closest version found: a no-op implementation
+Sep. 06, 2024 6:38:48 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 128.
+Sep. 06, 2024 6:38:48 P.M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.0.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[ERROR] Tests run: 3, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 54.64 s <<< FAILURE! -- in com.veeva.homework.RunCucumberTest
+[ERROR] Do search suggestions contain the search term?.The search term "test" is presented in the search suggestion list -- Time elapsed: 11.11 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.veeva.SearchResultPageNavigator.quit()" because "this.searchResult" is null
+	at com.veeva.homework.SearchResultPageTest.cleanUp(SearchResultPageTest.java:39)
+
+[ERROR] Do search suggestions contain the search term?.Requesting a search term's results leads to a new search result pages -- Time elapsed: 20.41 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.veeva.SearchResultPageNavigator.quit()" because "this.searchResult" is null
+	at com.veeva.homework.SearchResultPageTest.cleanUp(SearchResultPageTest.java:39)
+
+[ERROR] Search Result Page and traversing between them.We go to the next page of results -- Time elapsed: 22.91 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <1> but was: <3>
+	at com.veeva.homework.SearchResultPageTest.i_will_get_the_next_result_page_in_the_sequence(SearchResultPageTest.java:34)
+	at ?.I will get the next result page in the sequence(classpath:com/veeva/homework/search_results.feature:6)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   expected: <1> but was: <3>
+[ERROR] Errors: 
+[ERROR]   Cannot invoke "com.veeva.SearchResultPageNavigator.quit()" because "this.searchResult" is null
+[ERROR]   Cannot invoke "com.veeva.SearchResultPageNavigator.quit()" because "this.searchResult" is null
+[INFO] 
+[ERROR] Tests run: 3, Failures: 1, Errors: 2, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  57.420 s
+[INFO] Finished at: 2024-09-06T18:38:50-04:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.3.1:test (default-test) on project homework: There are test failures.
+[ERROR] 
+[ERROR] Please refer to C:\Users\faris\Documents\programming\veeva_hmwk\homework\target\surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
