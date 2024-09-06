@@ -3,27 +3,17 @@
  */
 
 package com.veeva;
-
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.edge.EdgeOptions;
 import java.time.Duration;
 import java.util.List;
 import java.util.ArrayList;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class GoogleSearch {
-
-    private WebDriver driver;
-    private EdgeOptions options;
+public class GoogleSearch extends BasePage {
     
     public GoogleSearch() {
-        System.setProperty("webdriver.edge.driver", "./ms_edge/msedgedriver.exe");
-        options = new EdgeOptions();
-        options.addArguments("--remote-allow-origins=*");
-        driver = new EdgeDriver(options);
+        super();
     }
 
     public List<String> getSearchSuggestions(String test) {
